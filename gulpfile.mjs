@@ -1,4 +1,4 @@
-import { series } from 'gulp'
+import { src, dest, series } from 'gulp'
 import { deleteAsync } from 'del'
 import { makeDirectory } from 'make-dir'
 
@@ -10,6 +10,10 @@ async function createOutDir(){
     return makeDirectory('dist')
 }
 
+function copyHTML(){
+    return src('src/index.html').pipe(dest('dist'))
+}
+
 export default series(
-    removeOutDir, createOutDir
+    removeOutDir, createOutDir, copyHTML
 )
