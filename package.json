@@ -22,8 +22,10 @@
   "homepage": "https://github.com/sivasankarankb/personal-website#readme",
   "devDependencies": {
     "@tailwindcss/cli": "^4.1.3",
+    "del": "^8.0.0",
     "gulp": "^5.0.0",
     "gulp-cli": "^3.0.0",
+    "make-dir": "^5.0.0",
     "tailwindcss": "^4.1.3"
   }
 }
