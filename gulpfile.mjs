@@ -1,6 +1,7 @@
-import { src, dest, series } from 'gulp'
+import { src, dest, series, parallel } from 'gulp'
 import { deleteAsync } from 'del'
 import { makeDirectory } from 'make-dir'
+import { exec } from 'child_process'
 
 async function removeOutDir(){
     return deleteAsync('dist')
@@ -14,6 +15,20 @@ function copyHTML(){
     return src('src/index.html').pipe(dest('dist'))
 }
 
+function buildCSS(cb){
+    exec(
+        'npx @tailwindcss/cli -i src/style.src.css --minify -o dist/style.css',
+
+        function (err, stdout, stderr){
+            console.log(stdout)
+            console.error(stderr)
+            cb(err)
+        }
+    )
+}
+
 export default series(
-    removeOutDir, createOutDir, copyHTML
+    removeOutDir, createOutDir, parallel(
+        copyHTML, buildCSS
+    )
 )
