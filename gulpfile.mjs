@@ -27,8 +27,12 @@ function buildCSS(cb){
     )
 }
 
+function copyImages(){
+    return src('src/images/**', {encoding: false}).pipe(dest('dist/images'))
+}
+
 export default series(
     removeOutDir, createOutDir, parallel(
-        copyHTML, buildCSS
+        copyHTML, buildCSS, copyImages
     )
 )
