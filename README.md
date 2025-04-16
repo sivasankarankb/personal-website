@@ -12,3 +12,9 @@ done with Tailwind CSS. Build process is done with `gulp.js` .
 4. Create dir `src/images`
 
 5. Build the site with `npx gulp`
+
+## Where are the Images?
+
+While I could store images and other binary files in this repo, it may be
+inefficient in the long run. I will put them up somewhere else and link to
+that below at a later date.
