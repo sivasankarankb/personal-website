@@ -31,8 +31,12 @@ function copyImages(){
     return src('src/images/**', {encoding: false}).pipe(dest('dist/images'))
 }
 
+function copyJS(){
+    return src('src/scripts/**', {encoding: false}).pipe(dest('dist/scripts'))
+}
+
 export default series(
     removeOutDir, createOutDir, parallel(
-        copyHTML, buildCSS, copyImages
+        copyHTML, buildCSS, copyImages, copyJS
     )
 )
