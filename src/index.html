@@ -8,15 +8,18 @@
 </head>
 <body class="text-xl">
     <nav class="m-8 rounded-md bg-neutral-800 flex justify-center">
-        <div class="px-6 py-4 text-white font-title flex space-x-4 items-center">
-            <span class="pr-4 text-3xl text-yellow-300 font-bold flex flex-col">
+        <div class="px-6 py-4 grow md:grow-0 text-white font-title flex items-center">
+            <img class="md:hidden" src="/images/icon-menu-white.png">
+            <span class="md:pr-8 grow md:grow-0 text-3xl text-yellow-300 text-center font-bold flex flex-col">
                 Siva K B
             </span>
-            <a class="underline decoration-dashed" href="#">Home</a>
-            <a class="underline decoration-dashed" href="#">Computers</a>
-            <a class="underline decoration-dashed" href="#">Photography</a>
-            <a class="underline decoration-dashed" href="#">Links</a>
-            <a class="underline decoration-dashed" href="#">About</a>
+            <span class="hidden md:flex space-x-4">
+                <a class="underline decoration-dashed" href="#">Home</a>
+                <a class="underline decoration-dashed" href="#">Computers</a>
+                <a class="underline decoration-dashed" href="#">Photography</a>
+                <a class="underline decoration-dashed" href="#">Links</a>
+                <a class="underline decoration-dashed" href="#">About</a>
+            </span>
         </div>
     </nav>
 
