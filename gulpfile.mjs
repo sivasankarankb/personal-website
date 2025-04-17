@@ -12,7 +12,7 @@ async function createOutDir(){
 }
 
 function copyHTML(){
-    return src('src/index.html').pipe(dest('dist'))
+    return src('src/*.html').pipe(dest('dist'))
 }
 
 function buildCSS(cb){
