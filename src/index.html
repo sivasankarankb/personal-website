@@ -7,9 +7,9 @@
     <title>Siva's Website</title>
 </head>
 <body class="text-xl">
-    <nav class="absolute inset-0 z-100 bg-white/50 flex justify-center items-center">
+    <nav id="main-nav-menu" class="hidden absolute inset-0 z-100 bg-white/50 flex justify-center items-center">
         <div class="relative px-6 py-4 rounded-md bg-neutral-800 text-white font-title underline decoration-dashed flex flex-col space-y-2 items-center">
-            <button class="absolute -top-4 -right-4 w-9 h-9 bg-neutral-800 rounded-full text-3xl">×</button>
+            <button id="main-nav-menu-close" class="absolute -top-4 -right-4 w-9 h-9 bg-neutral-800 rounded-full text-3xl">×</button>
             <a href="#">Home</a>
             <a href="#">Computers</a>
             <a href="#">Photography</a>
@@ -20,7 +20,7 @@
 
     <nav class="m-8 rounded-md bg-neutral-800 flex justify-center">
         <div class="px-6 py-4 grow md:grow-0 text-white font-title flex items-center">
-            <img class="md:hidden" src="/images/icon-menu-white.png">
+            <img id="main-nav-menu-open" class="md:hidden" src="/images/icon-menu-white.png">
             <span class="md:pr-8 grow md:grow-0 text-3xl text-yellow-300 text-center font-bold flex flex-col">
                 Siva K B
             </span>
@@ -55,5 +55,7 @@
             </p>
         </div>
     </footer>
+
+    <script src="/scripts/main_nav_menu.js"></script>
 </body>
 </html>
