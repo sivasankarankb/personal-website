@@ -16,5 +16,5 @@ done with Tailwind CSS. Build process is done with `gulp.js` .
 ## Where are the Images?
 
 While I could store images and other binary files in this repo, it may be
-inefficient in the long run. I will put them up somewhere else and link to
-that below at a later date.
+inefficient in the long run. I've put them up on Google Drive
+[here](https://drive.google.com/drive/folders/1eLMkVJuD0WgddytU_zek4h3gq8XFoyPl).
