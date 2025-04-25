@@ -28,7 +28,7 @@ media of my own creation. I would like to retain the rights to that.
 1. Plain text, images and icons in this repo and all content in the Google
    Drive assets folder linked in the *"Where are the Images?"* section are:
    ```
-   Copyright © 2025 Sivasankaran K B
+   Copyright 2025 Sivasankaran K B
    All rights reserved
    ```
    If you would like to reuse significant portions of my text content or any of
