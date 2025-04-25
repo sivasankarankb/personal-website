@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>The Author</title>
+</head>
+<body class="dark:bg-black text-xl">
+    <nav aria-label="Main navigation menu" id="main-nav-menu" class="hidden absolute inset-0 z-100 bg-white/50 dark:bg-black/50 flex justify-center items-center">
+        <div class="relative px-6 py-4 rounded-md bg-neutral-800 text-white font-title underline decoration-dashed flex flex-col space-y-2 items-center">
+            <a id="main-nav-menu-item-0" href="/index.html">Home</a>
+            <a href="#">Computers</a>
+            <a href="#">Photography</a>
+            <a href="#">Links</a>
+            <a href="/about.html">About</a>
+            <button aria-label="Close" id="main-nav-menu-close" class="absolute -top-4 -right-4 w-9 h-9 bg-neutral-800 rounded-full text-3xl">×</button>
+        </div>
+    </nav>
+
+    <nav aria-label="Main navigation bar" class="m-2 mb-8 sm:m-8 rounded-md bg-neutral-800 flex justify-center">
+        <div class="px-6 py-4 grow md:grow-0 text-white font-title flex items-center">
+            <button aria-label="Open main navigation menu." id="main-nav-menu-open" class="md:hidden">
+                <img alt="3 lines menu icon" src="/images/icon-menu-white.png">
+            </button>
+            <span aria-hidden="true" class="md:pr-8 grow md:grow-0 text-3xl text-yellow-300 text-center font-bold flex flex-col">
+                Siva K B
+            </span>
+            <span class="hidden md:flex space-x-4">
+                <a class="underline decoration-dashed" href="/index.html">Home</a>
+                <a class="underline decoration-dashed" href="#">Computers</a>
+                <a class="underline decoration-dashed" href="#">Photography</a>
+                <a class="underline decoration-dashed" href="#">Links</a>
+                <a class="underline decoration-dashed" href="/about.html">About</a>
+            </span>
+        </div>
+    </nav>
+
+    <h1 class="mb-8 font-title md:text-6xl text-5xl dark:text-white font-bold text-center">The Author</h1>
+
+    <section class="mb-8 flex justify-center items-center">
+        <div class="w-[var(--breakpoint-md)] mx-4 sm:mx-8 dark:text-white">
+            <p class="mb-4 flex justify-center">
+                <img class="w-96 rounded-lg" src="/images/siva-home-plantains.jpg" alt="Siva in a light blue tee shirt, standing with a pleasant expression, surrounded by banana plants.">
+            </p>
+
+            <p class="text-justify">
+                I'm Sivasankaran K B, a software developer/engineer by
+                passion and by profession. I've been playing around with
+                computers since 2011. I've worked nearly 5 years in
+                the industry.
+            </p>
+        </div>
+    </section>
+
+    <section class="mb-8 flex justify-center items-center">
+        <div class="w-[var(--breakpoint-md)] mx-4 sm:mx-8 dark:text-white">
+            <h2 class="mb-4 font-title text-4xl font-bold">Early Life</h2>
+            <p class="text-justify">
+                I was born in a village in Thrissur, Kerala. I still live
+                there. My parents are well educated farmers. They tell me that
+                I used to break my toys, curious about their inner workings.
+                They also tell me I was fond of the English language.
+            </p>
+        </div>
+    </section>
+
+    <section class="mb-8 flex justify-center items-center">
+        <div class="w-[var(--breakpoint-md)] mx-4 sm:mx-8 dark:text-white">
+            <h2 class="mb-4 font-title text-4xl font-bold">Education</h2>
+            <p class="text-justify mb-4">
+                I did my schooling at a CBSE school near home. I was top of my
+                class in Computer Science. I got into HTML, CSS, JavaScript,
+                Java and C/C++ while at school. I also used to write a little
+                hobby x86 Operating System back then.
+            </p>
+
+            <p class="text-justify">
+                I have a bachelor's degree in Computer Science and Engineering
+                from a private college near home.  While there, I got into
+                Python. I competed in a few local coding contests at college
+                Tech Fests and even won some of them. I also worked at two
+                startups, the second of which turned into my first real job.
+            </p>
+        </div>
+    </section>
+
+    <footer class="mx-2 mb-2 sm:mx-8 rounded-md bg-neutral-800 flex justify-center">
+        <div class="px-6 py-4 text-white flex space-x-4 items-center">
+            <p class="text-center">
+                Made with love in HTML5. Styled with Tailwind CSS. Source on
+                <a class="underline decoration-dashed" href="https://github.com/sivasankarankb/personal-website/">GitHub</a>.
+            </p>
+        </div>
+    </footer>
+
+    <script src="/scripts/main_nav_menu.js"></script>
+</body>
+</html>
